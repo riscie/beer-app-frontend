@@ -2,5 +2,11 @@
   "name": "beer-app-frontend",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://api.brewerydb.com/v2/"
+    }
+  ]
 }

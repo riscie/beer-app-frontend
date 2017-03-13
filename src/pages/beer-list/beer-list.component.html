@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Beer List
+            <small *ngIf="beers.length > 0">({{beers.length}})</small>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let beer of beers">
+            <ion-thumbnail item-left>
+                <img [src]="beer.labels?.icon">
+            </ion-thumbnail>
+            <h2>{{beer.name}}</h2>
+            <p>{{beer.description}}</p>
+            <button ion-button clear item-right>View</button>
+        </ion-item>
+    </ion-list>
+    <!--{{beer | json}}-->
+    <!--<button ion-button secondary menuToggle>Toggle Menu</button>-->
+</ion-content>

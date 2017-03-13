@@ -16,7 +16,7 @@ export class Page2 {
     this.selectedItem = navParams.get('item');
 
     // Let's populate this page with some filler content for funzies
-    this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
+    this.icons = ['flask', 'wifi', 'beers', 'football', 'basketball', 'paper-plane',
     'american-football', 'boat', 'bluetooth', 'build'];
 
     this.items = [];
