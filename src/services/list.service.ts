@@ -1,34 +1,33 @@
 import { Injectable } from "@angular/core";
-import { Http } from "@angular/http";
+import { Http, Response } from "@angular/http";
 import "rxjs/add/operator/toPromise";
-import { apiUrl } from "../constants";
+//import { apiUrl } from "../constants";
+import { Observable } from "rxjs";
 
 
 @Injectable()
 export class ListService {
     CONNECTION_ERROR: string = "Es wurde ein Problem bei der Datenverbindung festegestellt. Bitte versuchen Sie es erneut.";
-    baseUrl: string = apiUrl + '/beers';
+    baseUrl: string = "http://api.brewerydb.com/v2" + '/beers' + '?key=fbf7aa12110a12d0ec0a470368fca9b8&styleId=3';
 
     constructor(private http: Http) {
     }
 
-    getBeer(): Promise<Array<any>> {
-        return this.http.get(this.baseUrl + '?key=fbf7aa12110a12d0ec0a470368fca9b8&styleId=3')
-            .toPromise()
-            .then(response => response.json())
-            .catch(this.handleError.bind(this));
+    getBeer(): Observable<any> {
+        return this.http.get(this.baseUrl)
+            .map((res: Response) => res.json())
+            .catch((error: any) => Observable.throw(error || 'Server error'));
     }
 
-
-    private handleError(error: any) {
-        console.info(this.CONNECTION_ERROR);
-        console.error(error);
-        // if (error.status == 403) {
-        //     this.warningService.showErrorMessage("PERMISSION_DENIED");
-        // } else {
-        //     this.warningService.showErrorMessage(this.CONNECTION_ERROR);
-        // }
-        //
-        // return Promise.reject(error.message || error);
-    }
+    // private handleError(error: any) {
+    //     console.info(this.CONNECTION_ERROR);
+    //     console.error(JSON.stringify(error));
+    //     // if (error.status == 403) {
+    //     //     this.warningService.showErrorMessage("PERMISSION_DENIED");
+    //     // } else {
+    //     //     this.warningService.showErrorMessage(this.CONNECTION_ERROR);
+    //     // }
+    //     //
+    //     // return Promise.reject(error.message || error);
+    // }
 }

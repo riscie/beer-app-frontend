@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,40 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+//Colors
+$color-green: #B7E87D;
+$color-yellow: #E5D97D;
+$color-orange: #C99F5E;
+$color-red: #C46E5C;
+$color-purple: #A25175;
+$color-purple-med: #93445E;
+$color-purple-dark: #3F344D;
+$color-dark: #4A4A4A;
+
+// Main Colors
+$color-hoppy: $color-yellow;
+$color-balanced: $color-orange;
+$color-malty: $color-red;
+$color-tart: $color-purple;
+
+// Font Colors
+$color-font-hoppy: $color-balanced;
+$color-font-balanced: $color-malty;
+$color-font-malty: $color-purple-med;
+$color-font-tart: $color-purple-dark;
+
+//Style ELements
+$color-title-bar: $color-dark;
+
+//Some global styles
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}

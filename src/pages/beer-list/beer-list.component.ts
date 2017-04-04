@@ -15,9 +15,12 @@ export class BeerListComponent implements OnInit {
 
     ngOnInit() {
         this.listService.getBeer()
-            .then(response => {
-                this.beers = response['data'].filter(b => b.labels && b.description);
-            });
+            .subscribe(
+                beers => {
+                    this.beers = beers;
+                },
+                err => {
+                    console.error(JSON.stringify(err));
+                });
     }
-
 }

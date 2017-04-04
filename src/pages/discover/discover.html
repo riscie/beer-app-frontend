@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>WHAT THE BEER?</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-grid">
+        <div *ngFor="let item of items"
+             [@animationTrigger]="animationState[item.name]"
+             (click)="triggerAnimation(item.name)"
+             class="box"
+             [ngClass]="item.name">
+            <div *ngIf="animationState[item.name] == 'small'">{{item.name | uppercase}}</div>
+            <div class="sub-grid" *ngIf="animationState[item.name] == 'big'">
+                <span class="vertbox"><p class="top-to-bottom-text">{{item.name | uppercase}}</span>
+                <div class="main-grid">
+                    <div *ngFor="let sub of item.subcategories"
+                         class="subbox"
+                         text-center
+                         [ngClass]="item.name">
+                        {{sub.name | uppercase}}<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--<div class="box hoppy" [@animationTrigger]="animationState['hoppy']" (click)="triggerAnimation('hoppy')">-->
+        <!--<div>HOPPY</div>-->
+        <!--</div>-->
+        <!--<div class="box balanced">-->
+        <!--<div>BALANCED</div>-->
+        <!--</div>-->
+        <!--<div class="box malty">-->
+        <!--<div>MALTY</div>-->
+        <!--</div>-->
+        <!--<div class="box tart">-->
+        <!--<div>TART</div>-->
+        <!--</div>-->
+    </div>
+</ion-content>
