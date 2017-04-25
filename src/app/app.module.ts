@@ -4,6 +4,11 @@ import { MyApp } from './app.component';
 import { ListService } from "../services/list.service";
 import { BeerListComponent } from "../pages/beer-list/beer-list.component";
 import { DiscoverComponent } from "../pages/discover/discover";
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
 
 @NgModule({
     declarations: [
@@ -12,7 +17,10 @@ import { DiscoverComponent } from "../pages/discover/discover";
         DiscoverComponent
     ],
     imports: [
-        IonicModule.forRoot(MyApp)
+        IonicModule.forRoot(MyApp),
+        BrowserModule,
+        BrowserAnimationsModule,
+        HttpModule
     ],
     bootstrap: [IonicApp],
     entryComponents: [
@@ -22,7 +30,10 @@ import { DiscoverComponent } from "../pages/discover/discover";
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},
-        ListService]
+        ListService,
+        SplashScreen,
+        StatusBar
+    ]
 })
 export class AppModule {
 }
