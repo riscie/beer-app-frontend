@@ -8,7 +8,9 @@ import { Observable } from "rxjs";
 @Injectable()
 export class ListService {
     CONNECTION_ERROR: string = "Es wurde ein Problem bei der Datenverbindung festegestellt. Bitte versuchen Sie es erneut.";
-    baseUrl: string = "http://api.brewerydb.com/v2" + '/beers' + '?key=fbf7aa12110a12d0ec0a470368fca9b8&styleId=3';
+    //baseUrl: string = "http://api.brewerydb.com/v2" + '/beers' + '?key=fbf7aa12110a12d0ec0a470368fca9b8&styleId=3';
+    baseUrl: string = "http://localhost:8100/api" + '/beers' + '?key=fbf7aa12110a12d0ec0a470368fca9b8&styleId=3';
+
 
     constructor(private http: Http) {
     }

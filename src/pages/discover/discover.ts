@@ -67,7 +67,7 @@ export class DiscoverComponent {
     }
 
     triggerAnimation(item: string) {
-        console.log(`animate ${item}`);
+        // console.log(`animate ${item}`);
         var newState = this.animationState[item] === 'small' ? 'big' : 'small';
         this.animationState = {
             hoppy: "small",

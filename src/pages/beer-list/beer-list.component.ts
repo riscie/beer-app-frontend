@@ -17,10 +17,10 @@ export class BeerListComponent implements OnInit {
         this.listService.getBeer()
             .subscribe(
                 beers => {
-                    this.beers = beers;
+                    this.beers = beers.data.filter(b => b.labels && b.labels.large);
                 },
                 err => {
-                    console.error(JSON.stringify(err));
+                    console.log(err);
                 });
     }
 }
