@@ -1,42 +1,22 @@
-import { Component, trigger, state, transition, animate, style, keyframes } from '@angular/core';
-
+import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { DiscoverDetails } from "../discover-detail/discover-detail";
+
 
 @Component({
     selector: 'discover',
     templateUrl: 'discover.html',
-    animations: [
-        trigger('animationTrigger', [
-            state('small', style({'min-height': '0'})),
-            state('big', style({'min-height': '75vh'})),
-            transition('small => big', [
-                animate(550,
-                    keyframes([
-                        style({'min-height': '85vh', offset: 0.5}),
-                        style({'min-height': '75vh', offset: 1})
-                    ])),
-            ]),
-            transition('big => small', [
-                animate('0.25s ease-out',)
-            ])
-        ])
-    ]
 })
 export class DiscoverComponent {
-    selectedItem: any;
-    icons: string[];
-    animationState: any = {
-        hoppy: "small",
-        balanced: "small",
-        malty: "small",
-        tart: "small"
-    };
+
+    classNames: any = ["hoppy", "balanced", "malty", "tart"]
+
     items: any = [
         {
             name: "hoppy",
             subcategories: [
-                {name: "somewhat hoppy"},
-                {name: 'wicked hoppy'}
+                {name: "somewhat hoppy", className: "hoppy"},
+                {name: 'wicked hoppy', className: "balanced"}
             ]
         },
         {
@@ -62,26 +42,13 @@ export class DiscoverComponent {
             ]
         }];
 
-    constructor(public navCtrl: NavController,
-                public navParams: NavParams) {
+    constructor(public navController: NavController,
+                public navParams: NavParams,) {
     }
 
-    triggerAnimation(item: string) {
-        console.log(`animate ${item}`);
-        var newState = this.animationState[item] === 'small' ? 'big' : 'small';
-        this.animationState = {
-            hoppy: "small",
-            balanced: "small",
-            malty: "small",
-            tart: "small"
-        };
-        this.animationState[item] = newState;
+    openNavDetailsPage(item) {
+        console.log(item);
+        this.navController.push(DiscoverDetails, {item: item});
     }
 
-    itemTapped(event, item) {
-        // That's right, we're pushing to ourselves!
-        this.navCtrl.push(DiscoverComponent, {
-            item: item
-        });
-    }
 }

@@ -1,19 +1,19 @@
 <ion-header>
     <ion-navbar color="dark">
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>WHAT THE BEER?</ion-title>
+        <ion-title>
+            {{ item.name | uppercase }}
+        </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
     <div class="main-grid">
-        <div *ngFor="let item of items; let i = index"
+        <div *ngFor="let item of item.subcategories; let i = index"
              (click)="openNavDetailsPage(item)"
              class="box"
              [ngClass]="classNames[i]">
             <div>{{item.name | uppercase}}</div>
         </div>
     </div>
+    <!--<ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}"></ion-icon>-->
 </ion-content>

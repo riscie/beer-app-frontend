@@ -17,7 +17,8 @@ export class BeerListComponent implements OnInit {
         this.listService.getBeer()
             .subscribe(
                 beers => {
-                    this.beers = beers;
+                    console.log(beers);
+                    this.beers = beers['data'];
                 },
                 err => {
                     console.error(JSON.stringify(err));

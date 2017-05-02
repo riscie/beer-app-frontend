@@ -1,0 +1,85 @@
+.box, .subbox, .vertbox {
+  margin: 0;
+  font-size: 2em;
+  box-shadow: -1px -1px 5px rgba(32, 32, 32, 0.3) inset
+}
+
+.subbox {
+  font-size: 0.8em;
+  box-shadow: 5px 0 3px rgba(32, 32, 32, 0.3) inset
+}
+
+.vertbox {
+  font-size: 1.2em;
+  //box-shadow: -5px 0 3px rgba(32, 32, 32, 0.3) inset
+  box-shadow: none;
+}
+
+.hoppy {
+  background-color: $color-hoppy;
+  color: $color-font-hoppy;
+}
+
+.balanced {
+  background-color: $color-balanced;
+  color: $color-font-balanced;
+}
+
+.malty {
+  background-color: $color-malty;
+  color: $color-font-malty;
+}
+
+.tart {
+  background-color: $color-tart;
+  color: $color-font-tart;
+}
+
+.main-grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.main-grid > div {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-grid > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+//
+
+.sub-grid {
+  min-height: 100%;
+  display: flex;
+  //flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.sub-grid > span {
+  display: flex;
+  flex-basis: 10%;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 14%;
+}
+
+.top-to-bottom-text {
+  transform: rotate(270deg);
+  white-space: nowrap;
+}
+
+//
+//.sub-grid > div > div {
+//  display: flex;
+//  justify-content: center;
+//  flex-direction: column;
+//}

@@ -4,12 +4,14 @@ import { MyApp } from './app.component';
 import { ListService } from "../services/list.service";
 import { BeerListComponent } from "../pages/beer-list/beer-list.component";
 import { DiscoverComponent } from "../pages/discover/discover";
+import { DiscoverDetails } from "../pages/discover-detail/discover-detail";
 
 @NgModule({
     declarations: [
         MyApp,
         BeerListComponent,
-        DiscoverComponent
+        DiscoverComponent,
+        DiscoverDetails
     ],
     imports: [
         IonicModule.forRoot(MyApp)
@@ -18,7 +20,8 @@ import { DiscoverComponent } from "../pages/discover/discover";
     entryComponents: [
         MyApp,
         BeerListComponent,
-        DiscoverComponent
+        DiscoverComponent,
+        DiscoverDetails
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},
