@@ -18,7 +18,7 @@ export class BeerListComponent implements OnInit {
             .subscribe(
                 beers => {
                     console.log(beers);
-                    this.beers = beers['data'];
+                    this.beers = beers['data'].filter(b => b.labels && b.labels.large);
                 },
                 err => {
                     console.error(JSON.stringify(err));
