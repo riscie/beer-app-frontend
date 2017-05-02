@@ -1,16 +1,16 @@
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>Beer List
-            <small *ngIf="beers.length > 0">({{beers.length}})</small>
-        </ion-title>
+    <ion-navbar color="dark">
+        <ion-title>YOU FOUND YOUR STYLE</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
     <ion-list>
+        <ion-item class="title-item">
+            <h2 text-center>{{item.style}}
+                <small *ngIf="beers.length > 0">({{beers.length}})</small>
+            </h2>
+        </ion-item>
         <ion-item *ngFor="let beer of beers">
             <ion-thumbnail item-left>
                 <img [src]="beer.labels?.icon">
@@ -20,6 +20,4 @@
             <button ion-button clear item-right>View</button>
         </ion-item>
     </ion-list>
-    <!--{{beer | json}}-->
-    <!--<button ion-button secondary menuToggle>Toggle Menu</button>-->
 </ion-content>

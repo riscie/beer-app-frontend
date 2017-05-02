@@ -9,7 +9,7 @@
 
 <ion-content>
     <div class="main-grid">
-        <div *ngFor="let item of items; let i = index"
+        <div *ngFor="let item of discoverSkeleton.items; let i = index"
              (click)="openNavDetailsPage(item)"
              class="box"
              [ngClass]="classNames[i]">
