@@ -1,7 +1,8 @@
 .box, .subbox, .vertbox {
   margin: 0;
   font-size: 2em;
-  box-shadow: -1px -1px 5px rgba(32, 32, 32, 0.3) inset
+  box-shadow: -1px -1px 5px rgba(32, 32, 32, 0.3) inset;
+  text-align: center;
 }
 
 .subbox {
