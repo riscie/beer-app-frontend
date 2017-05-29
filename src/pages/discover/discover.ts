@@ -12,23 +12,23 @@ export class DiscoverComponent {
     discoverSkeleton: any = {
         "items": [
             {
-                "name": "hoppy",
+                "name": "hopfig",
                 "subcategories": [
                     {
-                        "name": "somewhat hoppy",
+                        "name": "dezent hopfig",
                         "subcategories": [
                             {
-                                "name": "dark and toasty",
+                                "name": "röstaromen, dunkle farben",
                                 "style": "AMERICAN BLACK ALE",
                                 "ids": [1, 6]
                             },
                             {
-                                "name": "delicately hopped with sweetish to toasty maltiness",
+                                "name": "süsslicher hopfengeschmack, leicht malzig",
                                 "style": "BELGIAN  PALE ALE",
                                 "ids": []
                             },
                             {
-                                "name": "moderate bitterness, pale",
+                                "name": "mässig bitter, helle farbe",
                                 "subcategories": [
                                     {
                                         "name": "wheat malt undertones",
@@ -36,20 +36,20 @@ export class DiscoverComponent {
                                         "ids": []
                                     },
                                     {
-                                        "name": "crisp & balanced",
+                                        "name": "spritzig, ausgeglichen",
                                         "subcategories": [
                                             {
-                                                "name": "clean, hoppy, american",
+                                                "name": "amerikanische brauart",
                                                 "style": "AMERICAN PALE ALE",
                                                 "ids": []
                                             },
                                             {
-                                                "name": "dry with vinous flavors, medium to slightly assertive hop bitterness",
+                                                "name": "trocken, weinartige aromen, leichte bis mittlere bitterkeit",
                                                 "style": "KÖLSCH",
                                                 "ids": []
                                             },
                                             {
-                                                "name": "spicy herbal & floral flavors, coarse",
+                                                "name": "würzig, herb",
                                                 "style": "GERMAN PILS",
                                                 "ids": []
                                             }
@@ -60,13 +60,13 @@ export class DiscoverComponent {
                         ]
                     },
                     {
-                        "name": "wicked hoppy",
+                        "name": "stark hopfig",
                         "subcategories": [
                             {
-                                "name": "spicy",
+                                "name": "würzig",
                                 "subcategories": [
                                     {
-                                        "name": "medium ABV, herbal / citric hops, bitter",
+                                        "name": "mittlerer alkoholgehalt, herb, citrusaromen",
                                         "style": "IPA",
                                         "ids": [
                                             2,
@@ -75,7 +75,7 @@ export class DiscoverComponent {
                                         ]
                                     },
                                     {
-                                        "name": "the bigger the better; robust & malty",
+                                        "name": "kräftig und malzig",
                                         "style": "DOUBLE / IMPERIAL IPA",
                                         "ids": [
                                             31
@@ -84,7 +84,7 @@ export class DiscoverComponent {
                                 ]
                             },
                             {
-                                "name": "hoppy, but still sweet; clean bitterness, dry edge",
+                                "name": "hopfig aber süsslich. Leichte trockene bitteraromen.",
                                 "style": "BELGIAN IPA",
                                 "ids": []
                             }
@@ -93,41 +93,41 @@ export class DiscoverComponent {
                 ]
             },
             {
-                "name": "balanced",
+                "name": "ausgeglichen",
                 "subcategories": [
                     {
-                        "name": "light in color",
+                        "name": "helle farbe",
                         "subcategories": [
                             {
-                                "name": "mild fruitiness & light hopp bitterness",
+                                "name": "mild fruchtig, leichte hopfige bitterkeit",
                                 "style": "ESB, CALIFORNIA COMMON, BLONDE",
                                 "ids": []
                             },
                             {
-                                "name": "yeasty, dry, some spice, light hops",
+                                "name": "hefearomen, trocken, leicht würzig.",
                                 "style": "HEFEWEIZEN",
                                 "ids": []
                             }
                         ]
                     },
                     {
-                        "name": "dark in color",
+                        "name": "dunkle farbe",
                         "subcategories": [
                             {
-                                "name": "light bodied",
+                                "name": "leicht und vollmundig",
                                 "subcategories": [
                                     {
-                                        "name": "mild roasted malt & noble hop flavor",
+                                        "name": "milde röstaromen. malzgaromen.",
                                         "style": "SCHWARZBIER",
                                         "ids": []
                                     }
                                 ]
                             },
                             {
-                                "name": "medium to full bodied",
+                                "name": "ausgeglichener körper",
                                 "subcategories": [
                                     {
-                                        "name": "dry roasted bitterness with caramel, chocolate coffee & med-high hop bitterness, malt sweetness",
+                                        "name": "trockene röstaromen. Aromen von Karamel, Schockolade oder Kaffee. Leicht süsslich.",
                                         "style": "ROBUST PORTER & AMERICAN STYLE STOUT",
                                         "ids": []
                                     }
@@ -138,29 +138,29 @@ export class DiscoverComponent {
                 ]
             },
             {
-                "name": "malty",
+                "name": "malzig",
                 "subcategories": [
                     {
-                        "name": "dark & toasty",
+                        "name": "dunkle röstaromen",
                         "subcategories": [
                             {
-                                "name": "low balancing bitterness",
+                                "name": "leichte ausgeglichene bitteraromen",
                                 "style": "BOCK",
                                 "ids": []
                             },
                             {
-                                "name": "rich and full bodied",
+                                "name": "vollmundig und kräftig",
                                 "subcategories": [
                                     {
-                                        "name": "chocolate, roasted, burnt malt & dark fruit",
+                                        "name": "Aromen von Schockolade, dörrfrüchten und malz",
                                         "subcategories": [
                                             {
-                                                "name": "size matters",
+                                                "name": "hoher alkoholgehalt",
                                                 "style": "RUSSIAN IMPERIAL",
                                                 "ids": []
                                             },
                                             {
-                                                "name": "medium ABV",
+                                                "name": "mittlerer alkoholgehalt",
                                                 "style": "DOPPELBOCK & MÄRZEN",
                                                 "ids": []
                                             }
@@ -169,57 +169,57 @@ export class DiscoverComponent {
                                 ]
                             },
                             {
-                                "name": "robust smokiness",
+                                "name": "raucharomen",
                                 "style": "RAUCHBIER",
                                 "ids": []
                             }
                         ]
                     },
                     {
-                        "name": "fruity & estery",
+                        "name": "fruchtig, citrusaromen",
                         "subcategories": [
                             {
-                                "name": "spicy and alcoholic",
+                                "name": "würzig, alkoholaromen",
                                 "subcategories": [
                                     {
-                                        "name": "sweetness from pale",
+                                        "name": "süsslich",
                                         "style": "TRIPEL",
                                         "ids": []
                                     },
                                     {
-                                        "name": "complex with mild dark malts",
+                                        "name": "komplex mit dunklen malzaromen",
                                         "style": "BELGIAN STRONG DARK ALE",
                                         "ids": []
                                     }
                                 ]
                             },
                             {
-                                "name": "rich, sweet malts, bready",
+                                "name": "vollmundig, süssliche malzaromen, brotaromen",
                                 "style": "MAIBOCK / HELLES",
                                 "ids": []
                             },
                             {
-                                "name": "yeasty",
+                                "name": "hefig",
                                 "style": "DUNKEL",
                                 "ids": []
                             }
                         ]
                     },
                     {
-                        "name": "rich, steely caramel",
+                        "name": "vollmundig, karamelaromen",
                         "subcategories": [
                             {
-                                "name": "roasted malt, high ABV",
+                                "name": "röstige malzaromen, hoher alkoholgehalt",
                                 "style": "WEE HEAVY & SCOTCH ALE",
                                 "ids": []
                             },
                             {
-                                "name": "some dark fruit & mild hop bitterness",
+                                "name": "dunkle fruchtaromen, milde hopfenbitterkeit",
                                 "style": "DUBBEL",
                                 "ids": []
                             },
                             {
-                                "name": "bold, dark, moderate phenols, alcoholic",
+                                "name": "dunkel, alkoholaromen, gäraromen",
                                 "style": "QUAD",
                                 "ids": []
                             }
@@ -228,33 +228,33 @@ export class DiscoverComponent {
                 ]
             },
             {
-                "name": "tart",
+                "name": "säuerlich",
                 "subcategories": [
                     {
-                        "name": "mild to moderate tartness",
+                        "name": "milde bis mittlere saueraromen",
                         "subcategories": [
                             {
-                                "name": "fruity, earthy, yeasty",
+                                "name": "fruchtige, erdige hefearomen",
                                 "style": "SAISON & FARMHOUSE ALE",
                                 "ids": []
                             },
                             {
-                                "name": "orange peel, coriander & spice",
+                                "name": "würzige orangen- oder korianderaromen",
                                 "style": "WIT",
                                 "ids": []
                             }
                         ]
                     },
                     {
-                        "name": "puckering",
+                        "name": "prickelnd",
                         "subcategories": [
                             {
-                                "name": "really puckering",
+                                "name": "stark prickelnd",
                                 "style": "GUEUZE",
                                 "ids": []
                             },
                             {
-                                "name": "light bodied, crisp",
+                                "name": "leicht prickelnd, schaumig",
                                 "style": "LAMBIC & BERLINER WEISSE",
                                 "ids": []
                             }
