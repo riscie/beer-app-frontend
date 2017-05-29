@@ -270,7 +270,6 @@ export class DiscoverComponent {
     }
 
     openNavDetailsPage(item) {
-        console.log(item);
         this.navController.push(DiscoverDetails, {item: item});
     }
 

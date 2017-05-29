@@ -1,20 +1,30 @@
-import { Injectable } from "@angular/core";
-import { Http, Response } from "@angular/http";
+import {Injectable} from "@angular/core";
+import {Http, Response} from "@angular/http";
 import "rxjs/add/operator/toPromise";
 //import { apiUrl } from "../constants";
-import { Observable } from "rxjs";
+import {Observable} from "rxjs";
 
 
 @Injectable()
 export class ListService {
     CONNECTION_ERROR: string = "Es wurde ein Problem bei der Datenverbindung festegestellt. Bitte versuchen Sie es erneut.";
-    baseUrl: string = "http://localhost:8100/api" + '/beers' + '?key=fbf7aa12110a12d0ec0a470368fca9b8&styleId=3';
+    baseUrl: string = "http://localhost:8100/api" + '/beers' + '?key=fbf7aa12110a12d0ec0a470368fca9b8';
 
     constructor(private http: Http) {
     }
 
     getBeer(): Observable<any[]> {
-        return this.http.get(this.baseUrl)
+        let query = `${this.baseUrl}/&styleId=3`;
+        console.log(`GET: ${query}`);
+        return this.http.get(query)
+            .map((res: Response) => res.json())
+            .catch((error: any) => Observable.throw(error || 'Server error'));
+    }
+
+    getBeerByStyleId(styleId: number): Observable<any[]> {
+        let query = `${this.baseUrl}/&styleId=${styleId}`;
+        console.log(`GET: ${query}`);
+            return this.http.get(query)
             .map((res: Response) => res.json())
             .catch((error: any) => Observable.throw(error || 'Server error'));
     }

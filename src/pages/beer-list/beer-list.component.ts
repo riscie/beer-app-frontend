@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { ListService } from "../../services/list.service";
+import {Component, OnInit} from '@angular/core';
+import {NavParams} from 'ionic-angular';
+import {ListService} from "../../services/list.service";
+import {Observable} from "rxjs";
 
 @Component({
     selector: 'beer-list',
@@ -10,26 +11,30 @@ export class BeerListComponent implements OnInit {
     item: any;
     beers: Array<any> = [];
 
-    constructor(public navCtrl: NavController,
-                private listService: ListService,
+    constructor(private listService: ListService,
                 params: NavParams) {
-        this.item = params.data.item ? params.data.item : {
-            "name": "dark and toasty",
-            "style": "AMERICAN BLACK ALE",
-            "ids": [1, 6]
-        };
+        this.item = params.data.item;
     }
 
     ngOnInit() {
-        this.listService.getBeer()
-            .subscribe(
-                beers => {
-                    console.log(beers);
-                    this.beers = beers['data'].filter(b => b.labels && b.labels.large);
-                    console.log("Ids to fetch from API: " + this.item.ids);
-                },
-                err => {
-                    console.error(JSON.stringify(err));
-                });
+        this.getBeerFromStyleArray(this.item.ids);
+    }
+
+    getBeerFromStyleArray(ids: number[]) {
+        // Creating an array of observables and using forkJoin to wait for all of them to emit their value
+        // For every Beer-StyleId we add the corresponding beers to the beers array to display them within the list
+        const observables = [];
+        ids.forEach(id => {
+            observables.push(this.listService.getBeerByStyleId(id));
+        });
+        Observable.forkJoin(observables).subscribe(
+            (result) => {
+                result.forEach(list => {
+                        this.beers.push(...list['data'].filter(b => b.labels && b.labels.large));
+                    },
+                    err => {
+                        console.error(JSON.stringify(err));
+                    })
+            });
     }
 }
