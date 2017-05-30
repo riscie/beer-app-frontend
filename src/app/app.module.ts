@@ -1,11 +1,14 @@
 import {NgModule, ErrorHandler} from '@angular/core';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
-import {ListService} from "../services/list.service";
+import {BeerService} from "../services/beer.service";
 import {BeerListComponent} from "../pages/beer-list/beer-list.component";
 import {DiscoverComponent} from "../pages/discover/discover";
 import {DiscoverDetails} from "../pages/discover-detail/discover-detail";
 import {FavsComponent} from "../pages/favs/favs.components";
+import {FavService} from "../services/fav.service";
+import {BeerDetailComponent} from "../pages/beer-detail/beer-detail.component";
+import {AboutComponent} from "../pages/about/about.component";
 
 @NgModule({
     declarations: [
@@ -13,7 +16,9 @@ import {FavsComponent} from "../pages/favs/favs.components";
         BeerListComponent,
         DiscoverComponent,
         DiscoverDetails,
-        FavsComponent
+        FavsComponent,
+        BeerDetailComponent,
+        AboutComponent
     ],
     imports: [
         IonicModule.forRoot(MyApp)
@@ -24,11 +29,15 @@ import {FavsComponent} from "../pages/favs/favs.components";
         BeerListComponent,
         DiscoverComponent,
         DiscoverDetails,
-        FavsComponent
+        FavsComponent,
+        BeerDetailComponent,
+        AboutComponent
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},
-        ListService]
+        BeerService,
+        FavService
+    ]
 })
 export class AppModule {
 }

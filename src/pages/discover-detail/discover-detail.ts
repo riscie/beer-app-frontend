@@ -10,7 +10,7 @@ export class DiscoverDetails {
     item: any;
     classNames: any = ["hoppy", "balanced", "malty", "tart"];
 
-    constructor(public navController: NavController,
+    constructor(private navController: NavController,
                 params: NavParams) {
         this.item = params.data.item;
     }

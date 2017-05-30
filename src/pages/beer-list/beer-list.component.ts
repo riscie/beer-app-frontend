@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {NavParams} from 'ionic-angular';
-import {ListService} from "../../services/list.service";
+import {NavController, NavParams} from 'ionic-angular';
 import {Observable} from "rxjs";
+import {BeerService} from "../../services/beer.service";
+import {BeerDetailComponent} from "../beer-detail/beer-detail.component";
 
 @Component({
     selector: 'beer-list',
@@ -11,7 +12,8 @@ export class BeerListComponent implements OnInit {
     item: any;
     beers: Array<any> = [];
 
-    constructor(private listService: ListService,
+    constructor(private beerService: BeerService,
+                private navController: NavController,
                 params: NavParams) {
         this.item = params.data.item;
     }
@@ -25,7 +27,7 @@ export class BeerListComponent implements OnInit {
         // For every Beer-StyleId we add the corresponding beers to the beers array to display them within the list
         const observables = [];
         ids.forEach(id => {
-            observables.push(this.listService.getBeerByStyleId(id));
+            observables.push(this.beerService.getBeerByStyleId(id));
         });
         Observable.forkJoin(observables).subscribe(
             (result) => {
@@ -36,5 +38,9 @@ export class BeerListComponent implements OnInit {
                         console.error(JSON.stringify(err));
                     })
             });
+    }
+
+    viewBeer(item: any) {
+        this.navController.push(BeerDetailComponent, {item: item});
     }
 }

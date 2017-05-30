@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <ion-title *ngIf="!isLoading">{{beer.name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card *ngIf="!isLoading">
+        <img [src]="beer.labels?.large">
+        <ion-card-content>
+            <ion-card-title>
+                <ion-row>
+                    <ion-col col-10>
+                        {{beer.name}}
+                    </ion-col>
+                    <ion-col col-2>
+                        <ion-icon *ngIf="!isFavorite" name="ios-heart-outline" (click)="toggleFavorite()"></ion-icon>
+                        <ion-icon *ngIf="isFavorite" name="ios-heart" (click)="toggleFavorite()"></ion-icon>
+                    </ion-col>
+                </ion-row>
+            </ion-card-title>
+            <p>{{beer.description}}</p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

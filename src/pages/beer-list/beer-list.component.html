@@ -11,13 +11,12 @@
                 <small *ngIf="beers.length > 0">({{beers.length}})</small>
             </h2>
         </ion-item>
-        <ion-item *ngFor="let beer of beers">
+        <ion-item *ngFor="let beer of beers" (click)="viewBeer(beer)">
             <ion-thumbnail item-left>
                 <img [src]="beer.labels?.icon">
             </ion-thumbnail>
             <h2>{{beer.name}}</h2>
             <p>{{beer.description}}</p>
-            <button ion-button clear item-right>View</button>
         </ion-item>
     </ion-list>
 </ion-content>

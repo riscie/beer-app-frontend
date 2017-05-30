@@ -3,6 +3,7 @@ import {Nav, Platform} from 'ionic-angular';
 import {StatusBar, Splashscreen} from 'ionic-native';
 import {DiscoverComponent} from "../pages/discover/discover";
 import {FavsComponent} from "../pages/favs/favs.components";
+import {AboutComponent} from "../pages/about/about.component";
 
 
 @Component({
@@ -19,7 +20,9 @@ export class MyApp {
         this.initializeApp();
         this.pages = [
             {title: 'Finde Dein Bier', icon: 'ios-beer', component: DiscoverComponent},
-            {title: 'Deine Favoriten', icon: 'heart', component: FavsComponent}
+            {title: 'Deine Favoriten', icon: 'heart', component: FavsComponent},
+            {title: 'About', icon: 'ios-information-circle', component: AboutComponent},
+
         ];
 
     }
