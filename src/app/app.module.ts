@@ -1,17 +1,19 @@
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
-import { ListService } from "../services/list.service";
-import { BeerListComponent } from "../pages/beer-list/beer-list.component";
-import { DiscoverComponent } from "../pages/discover/discover";
-import { DiscoverDetails } from "../pages/discover-detail/discover-detail";
+import {NgModule, ErrorHandler} from '@angular/core';
+import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
+import {MyApp} from './app.component';
+import {ListService} from "../services/list.service";
+import {BeerListComponent} from "../pages/beer-list/beer-list.component";
+import {DiscoverComponent} from "../pages/discover/discover";
+import {DiscoverDetails} from "../pages/discover-detail/discover-detail";
+import {FavsComponent} from "../pages/favs/favs.components";
 
 @NgModule({
     declarations: [
         MyApp,
         BeerListComponent,
         DiscoverComponent,
-        DiscoverDetails
+        DiscoverDetails,
+        FavsComponent
     ],
     imports: [
         IonicModule.forRoot(MyApp)
@@ -21,7 +23,8 @@ import { DiscoverDetails } from "../pages/discover-detail/discover-detail";
         MyApp,
         BeerListComponent,
         DiscoverComponent,
-        DiscoverDetails
+        DiscoverDetails,
+        FavsComponent
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},

@@ -1,17 +1,20 @@
 <ion-header>
     <ion-navbar color="dark">
-        <ion-title>DU HAST DEINEN STIL GEFUNDEN</ion-title>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>FAVORITES</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content>
     <ion-list>
         <ion-item class="title-item">
-            <h2 text-center>{{item.style}}
-                <small *ngIf="beers.length > 0">({{beers.length}})</small>
+            <h2 text-center>Deine liebsten Biere
+                <small>({{favs.length}})</small>
             </h2>
         </ion-item>
-        <ion-item *ngFor="let beer of beers">
+        <ion-item *ngFor="let beer of favs">
             <ion-thumbnail item-left>
                 <img [src]="beer.labels?.icon">
             </ion-thumbnail>
