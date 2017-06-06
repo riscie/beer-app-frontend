@@ -32,7 +32,7 @@ export class BeerListComponent implements OnInit {
         Observable.forkJoin(observables).subscribe(
             (result) => {
                 result.forEach(list => {
-                        this.beers.push(...list['data'].filter(b => b.labels && b.labels.large));
+                        this.beers.push(...list['data'].filter(b => b.labels && b.labels.medium && b.description));
                     },
                     err => {
                         console.error(JSON.stringify(err));
