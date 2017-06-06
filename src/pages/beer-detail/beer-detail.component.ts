@@ -43,13 +43,23 @@ export class BeerDetailComponent implements OnInit {
                 if (!this.hasNote) {
                     this.favService.createNote({id: this.id, note: this.note})
                         .subscribe(() => {
-                            this.presentNoteSavedMessage();
+                            this.presentMessage("📓 Notitz hinzugefügt");
+                            this.hasNote = true;
                         });
                 } else {
-                    this.favService.updateNote({id: this.id, note: this.note})
-                        .subscribe(() => {
-                            this.presentNoteSavedMessage();
-                        });
+                    if (this.note === "") {
+                        this.favService.deleteNote({id: this.id, note: this.note})
+                            .subscribe(() => {
+                                this.presentMessage("📓 Notitz gelöscht");
+                                this.hasNote = false;
+                            });
+                    } else {
+                        this.favService.updateNote({id: this.id, note: this.note})
+                            .subscribe(() => {
+                                this.presentMessage("📓 Notitz aktualisiert");
+                            });
+                    }
+
                 }
             });
 
@@ -67,9 +77,9 @@ export class BeerDetailComponent implements OnInit {
             });
     }
 
-    presentNoteSavedMessage() {
+    presentMessage(message: string) {
         let toast = this.toastCtrl.create({
-            message: 'Notitz gespeichert',
+            message: message,
             duration: 3000,
             cssClass: "toast",
         });
@@ -79,11 +89,15 @@ export class BeerDetailComponent implements OnInit {
     toggleFavorite() {
         if (!this.isFavorite) {
             this.favService.addFavorite(this.beer)
-                .subscribe();
+                .subscribe(() => {
+                    this.presentMessage(`❤️ "${this.beer.name}" zu Favoriten hinzugefügt`)
+                });
         }
         else {
             this.favService.deleteFavorite(this.beer.id)
-                .subscribe();
+                .subscribe(() => {
+                    this.presentMessage(`💔️ "${this.beer.name}" von Favoriten entfernt`)
+                });
         }
         this.isFavorite = !this.isFavorite;
     }

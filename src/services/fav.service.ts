@@ -51,21 +51,22 @@ export class FavService {
     }
 
     updateNote(note: any): Observable<any> {
-        if (note.note === "") {
-            console.log("Delete Note");
-            let query = `${this.baseUrl}/notes/${note.id}`;
-            console.log(`DELETE: ${query}`);
-            return this.http.delete(query)
-                .map((res: Response) => res.json())
-                .catch(this.handleError.bind(this));
-        } else {
-            console.log("Update Note");
-            let query = `${this.baseUrl}/notes/${note.id}`;
-            console.log(`PUT: ${query}`);
-            return this.http.put(query, note)
-                .map((res: Response) => res.json())
-                .catch(this.handleError.bind(this));
-        }
+        console.log("Update Note");
+        let query = `${this.baseUrl}/notes/${note.id}`;
+        console.log(`PUT: ${query}`);
+        return this.http.put(query, note)
+            .map((res: Response) => res.json())
+            .catch(this.handleError.bind(this));
+
+    }
+
+    deleteNote(note: any): Observable<any> {
+        console.log("Delete Note");
+        let query = `${this.baseUrl}/notes/${note.id}`;
+        console.log(`DELETE: ${query}`);
+        return this.http.delete(query)
+            .map((res: Response) => res.json())
+            .catch(this.handleError.bind(this));
     }
 
     getNoteForBeer(id: string): Observable<any> {
