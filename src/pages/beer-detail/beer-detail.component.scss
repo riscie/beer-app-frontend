@@ -5,3 +5,9 @@
 .img-loaded + ion-spinner {
     display: none;
 }
+
+.toast {
+    > div {
+        background-color: #C3DEB7 !important;
+    }
+}
