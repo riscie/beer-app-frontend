@@ -19,7 +19,8 @@ Die App wurde während des **FHNW Workshops WS6C - Mobile App Development** erst
 * [ionic](http://ionicframework.com)
 * [Angular](http://angular.io)
 ##### Backend (Just for Testing)
-* [json-server](https://github.com/typicode/json-server)
+* [BreweryDB](http://www.brewerydb.com/developers/docs) - **Öffentliche API**, benutzt für die Liste der Biere sowie Beschreibung der Biere
+* [json-server](https://github.com/typicode/json-server) - Für das Persistieren von **Favoriten und Notizen**
 ##### Screenshots
 ![Screenshot 1](http://langhard.com/fhnw/what_the_beer/1.png "Finde Dein Bier anhand deiner Geschmacksrichtung")<br/>
 ![Screenshot 2](http://langhard.com/fhnw/what_the_beer/2.png "Finde Deinen Bier Stil")<br/>
