@@ -95,11 +95,6 @@ export class DiscoverComponent {
                                         ]
                                     }
                                 ]
-                            },
-                            {
-                                "name": "hopfig aber süsslich. leichte trockene Bitteraromen.",
-                                "style": "BELGIAN IPA",
-                                "ids": []
                             }
                         ]
                     }
