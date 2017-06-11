@@ -20,12 +20,17 @@ export class DiscoverComponent {
                             {
                                 "name": "Röstaromen, dunkle Farben",
                                 "style": "AMERICAN BLACK ALE",
-                                "ids": [1, 6]
+                                "ids": [
+                                  1,
+                                  6
+                                ]
                             },
                             {
                                 "name": "süsslicher Hopfengeschmack, leicht malzig",
                                 "style": "BELGIAN  PALE ALE",
-                                "ids": [62]
+                                "ids": [
+                                  62
+                                ]
                             },
                             {
                                 "name": "mässig bitter, helle Farbe",
@@ -33,7 +38,9 @@ export class DiscoverComponent {
                                     {
                                         "name": "weizig, malzig",
                                         "style": "AMERICAN PALE WHEAT ALE",
-                                        "ids": [112]
+                                        "ids": [
+                                          112
+                                        ]
                                     },
                                     {
                                         "name": "spritzig, ausgeglichen",
@@ -41,17 +48,23 @@ export class DiscoverComponent {
                                             {
                                                 "name": "Amerikanische Brauart",
                                                 "style": "AMERICAN PALE ALE",
-                                                "ids": [41]
+                                                "ids": [
+                                                  41
+                                                ]
                                             },
                                             {
                                                 "name": "trocken, weinartige Aromen, leichte bis mittlere Bitterkeit",
                                                 "style": "KÖLSCH",
-                                                "ids": [45]
+                                                "ids": [
+                                                  45
+                                                ]
                                             },
                                             {
                                                 "name": "würzig, herb",
                                                 "style": "GERMAN PILS",
-                                                "ids": [75]
+                                                "ids": [
+                                                  75
+                                                ]
                                             }
                                         ]
                                     }
@@ -101,12 +114,16 @@ export class DiscoverComponent {
                             {
                                 "name": "mild fruchtig, leichte hopfige Bitterkeit",
                                 "style": "ESB, CALIFORNIA COMMON, BLONDE",
-                                "ids": [110]
+                                "ids": [
+                                  110
+                                ]
                             },
                             {
                                 "name": "Hefearomen, trocken, leicht würzig.",
                                 "style": "HEFEWEIZEN",
-                                "ids": [48]
+                                "ids": [
+                                  48
+                                ]
                             }
                         ]
                     },
@@ -119,7 +136,9 @@ export class DiscoverComponent {
                                     {
                                         "name": "milde Röstaromen. Malzgaromen.",
                                         "style": "SCHWARZBIER",
-                                        "ids": [84]
+                                        "ids": [
+                                          84
+                                        ]
                                     }
                                 ]
                             },
@@ -129,7 +148,10 @@ export class DiscoverComponent {
                                     {
                                         "name": "trockene Röstaromen. Aromen von Karamel, Schokolade oder Kaffee. leicht süsslich.",
                                         "style": "ROBUST PORTER & AMERICAN STYLE STOUT",
-                                        "ids": [19, 42]
+                                        "ids": [
+                                          19,
+                                          42
+                                        ]
                                     }
                                 ]
                             }
@@ -146,7 +168,9 @@ export class DiscoverComponent {
                             {
                                 "name": "leichte ausgeglichene Bitteraromen",
                                 "style": "BOCK",
-                                "ids": [88]
+                                "ids": [
+                                  88
+                                ]
                             },
                             {
                                 "name": "vollmundig und kräftig",
@@ -157,12 +181,18 @@ export class DiscoverComponent {
                                             {
                                                 "name": "hoher alkoholgehalt",
                                                 "style": "IMPERIAL STOUT",
-                                                "ids": [16, 43]
+                                                "ids": [
+                                                  16,
+                                                  43
+                                                ]
                                             },
                                             {
                                                 "name": "mittlerer alkoholgehalt",
                                                 "style": "DOPPELBOCK & MÄRZEN",
-                                                "ids": [90, 81]
+                                                "ids": [
+                                                  90,
+                                                  81
+                                                ]
                                             }
                                         ]
                                     }
@@ -171,7 +201,12 @@ export class DiscoverComponent {
                             {
                                 "name": "raucharomen",
                                 "style": "RAUCHBIER",
-                                "ids": [54, 85, 86, 87]
+                                "ids": [
+                                  54,
+                                  85,
+                                  86,
+                                  87
+                                ]
                             }
                         ]
                     },
@@ -184,24 +219,32 @@ export class DiscoverComponent {
                                     {
                                         "name": "süsslich",
                                         "style": "TRIPEL",
-                                        "ids": [59]
+                                        "ids": [
+                                          59
+                                        ]
                                     },
                                     {
                                         "name": "komplex mit dunklen Malzaromen",
                                         "style": "BELGIAN STRONG DARK ALE",
-                                        "ids": [64]
+                                        "ids": [
+                                          64
+                                        ]
                                     }
                                 ]
                             },
                             {
                                 "name": "vollmundig, süssliche malzaromen, brotaromen",
                                 "style": "MAIBOCK / HELLES",
-                                "ids": [89]
+                                "ids": [
+                                  89
+                                ]
                             },
                             {
                                 "name": "hefig",
                                 "style": "DUNKEL",
-                                "ids": [83]
+                                "ids": [
+                                  83
+                                ]
                             }
                         ]
                     },
@@ -211,17 +254,23 @@ export class DiscoverComponent {
                             {
                                 "name": "röstige malzaromen, hoher alkoholgehalt",
                                 "style": "WEE HEAVY & SCOTCH ALE",
-                                "ids": [15]
+                                "ids": [
+                                  15
+                                ]
                             },
                             {
                                 "name": "dunkle fruchtaromen, milde hopfenbitterkeit",
                                 "style": "DUBBEL",
-                                "ids": [58]
+                                "ids": [
+                                  58
+                                ]
                             },
                             {
                                 "name": "dunkel, alkoholaromen, gäraromen",
                                 "style": "QUAD",
-                                "ids": [60]
+                                "ids": [
+                                  60
+                                ]
                             }
                         ]
                     }
@@ -236,12 +285,16 @@ export class DiscoverComponent {
                             {
                                 "name": "fruchtige, erdige hefearomen",
                                 "style": "SAISON & FARMHOUSE ALE",
-                                "ids": [72]
+                                "ids": [
+                                  72
+                                ]
                             },
                             {
                                 "name": "würzige orangen- oder korianderaromen",
                                 "style": "WIT",
-                                "ids": [65]
+                                "ids": [
+                                  65
+                                ]
                             }
                         ]
                     },
@@ -251,12 +304,17 @@ export class DiscoverComponent {
                             {
                                 "name": "stark prickelnd",
                                 "style": "GUEUZE",
-                                "ids": [67]
+                                "ids": [
+                                  67
+                                ]
                             },
                             {
                                 "name": "leicht prickelnd, schaumig",
                                 "style": "LAMBIC & BERLINER WEISSE",
-                                "ids": [66, 46]
+                                "ids": [
+                                  66,
+                                  46
+                                ]
                             }
                         ]
                     }
