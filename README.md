@@ -13,7 +13,8 @@ Die App wurde während des **FHNW Workshops WS6C - Mobile App Development** erst
   * `npm install` (or `yarn install`)
   * `ionic serve`
 * **Backend**
-  * `json-server --watch db.json`
+  * Install json-server: `npm install -g json-server`
+  * Run it using the db.json within the repo: `json-server --watch db.json`
 #### Tech Stack
 ##### Frontend
 * [ionic](http://ionicframework.com)
