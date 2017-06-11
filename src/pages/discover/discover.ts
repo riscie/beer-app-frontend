@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { DiscoverDetails } from "../discover-detail/discover-detail";
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 @Component({
@@ -319,7 +320,8 @@ export class DiscoverComponent {
     };
 
     constructor(public navController: NavController,
-                public navParams: NavParams,) {
+                public navParams: NavParams,
+                private splashScreen: SplashScreen) {
     }
 
     openNavDetailsPage(item) {

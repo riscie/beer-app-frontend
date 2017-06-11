@@ -9,6 +9,7 @@ import {FavsComponent} from "../pages/favs/favs.components";
 import {FavService} from "../services/fav.service";
 import {BeerDetailComponent} from "../pages/beer-detail/beer-detail.component";
 import {AboutComponent} from "../pages/about/about.component";
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import {AboutComponent} from "../pages/about/about.component";
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},
         BeerService,
-        FavService
+        FavService,
+        SplashScreen
     ]
 })
 export class AppModule {
