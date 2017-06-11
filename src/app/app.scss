@@ -13,7 +13,7 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 //Fonts
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i');
 
 //Colors
 $color-green: #B7E87D;
@@ -42,10 +42,22 @@ $color-title-bar: $color-dark;
 
 //Some global styles
 * {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 html, body {
   height: 100%;
   margin: 0;
+}
+
+.toolbar-title-md {
+  text-align: center;
+  font-weight: 700;}
+
+.card-title-md {
+  font-weight: 700;
+}
+
+.content-md {
+  background-color: #ecf0f1
 }
