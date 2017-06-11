@@ -1,208 +1,160 @@
 {
-    "favorites": [
-        {
-            "id": "WNdNIc",
-            "name": "Abbot Ale",
-            "nameDisplay": "Abbot Ale",
-            "description": "Abbot Ale is brewed in Bury St. Edmunds – a place which enjoys a rich brewing heritage than can be traced back almost 1000 years.\r\n \r\n\r\nThe famous Domesday Book includes a passage about 'cerevisiarii' or ale brewers as servants of the Abbot in Bury St Edmunds' Great Abbey. The Greene King brewery sits alongside the historic ruins of the Abbey and to this day our brewers still draw water from the same chalk wells used by their brewing predecessors all those years ago.\r\nHailed by the late beer writer Michael Jackson as \"one of the great characters of the beer world\", Abbot Ale is brewed for quality of the highest order. Abbot is an irresistible ale with masses of fruit characters, a malty richness and superb hop balance. It is brewed longer to a unique recipe, which makes it the full-flavoured, smooth and mature beer it is today.",
-            "abv": "5",
-            "glasswareId": 5,
-            "styleId": 1,
-            "isOrganic": "N",
-            "labels": {
-                "icon": "https://s3.amazonaws.com/brewerydbapi/beer/WNdNIc/upload_DsGyv6-icon.png",
-                "medium": "https://s3.amazonaws.com/brewerydbapi/beer/WNdNIc/upload_DsGyv6-medium.png",
-                "large": "https://s3.amazonaws.com/brewerydbapi/beer/WNdNIc/upload_DsGyv6-large.png"
-            },
-            "status": "verified",
-            "statusDisplay": "Verified",
-            "createDate": "2012-01-03 02:42:38",
-            "updateDate": "2015-12-15 23:37:42",
-            "glass": {
-                "id": 5,
-                "name": "Pint",
-                "createDate": "2012-01-03 02:41:33"
-            },
-            "style": {
-                "id": 1,
-                "categoryId": 1,
-                "category": {
-                    "id": 1,
-                    "name": "British Origin Ales",
-                    "createDate": "2012-03-21 20:06:45"
-                },
-                "name": "Classic English-Style Pale Ale",
-                "shortName": "English Pale",
-                "description": "Classic English pale ales are golden to copper colored and display earthy, herbal English-variety hop character. Note that \"earthy, herbal English-variety hop character\" is the perceived end, but may be a result of the skillful use of hops of other national origins. Medium to high hop bitterness, flavor, and aroma should be evident. This medium-bodied pale ale has low to medium malt flavor and aroma. Low caramel character is allowable. Fruity-ester flavors and aromas are moderate to strong. Chill haze may be in evidence only at very cold temperatures. The absence of diacetyl is desirable, though, diacetyl (butterscotch character) is acceptable and characteristic when at very low levels.",
-                "ibuMin": "20",
-                "ibuMax": "40",
-                "abvMin": "4.5",
-                "abvMax": "5.5",
-                "srmMin": "5",
-                "srmMax": "5",
-                "ogMin": "1.04",
-                "fgMin": "1.008",
-                "fgMax": "1.016",
-                "createDate": "2012-03-21 20:06:45",
-                "updateDate": "2015-04-07 15:18:23"
-            }
+  "favorites": [
+    {
+      "id": "Ic6Tku",
+      "name": "Boddingtons Pub Ale",
+      "nameDisplay": "Boddingtons Pub Ale",
+      "description": "A higher ABV version of Boddingtons Draught Bitter, brewed since 1993 for export markets. It was available in the United Kingdom from 1995–6 as Boddingtons Export.",
+      "abv": "4.6",
+      "glasswareId": 5,
+      "availableId": 1,
+      "styleId": 1,
+      "isOrganic": "N",
+      "labels": {
+        "icon": "https://s3.amazonaws.com/brewerydbapi/beer/Ic6Tku/upload_ZRNNFc-icon.png",
+        "medium": "https://s3.amazonaws.com/brewerydbapi/beer/Ic6Tku/upload_ZRNNFc-medium.png",
+        "large": "https://s3.amazonaws.com/brewerydbapi/beer/Ic6Tku/upload_ZRNNFc-large.png"
+      },
+      "status": "verified",
+      "statusDisplay": "Verified",
+      "createDate": "2012-01-03 02:44:01",
+      "updateDate": "2016-08-01 20:40:12",
+      "glass": {
+        "id": 5,
+        "name": "Pint",
+        "createDate": "2012-01-03 02:41:33"
+      },
+      "available": {
+        "id": 1,
+        "name": "Year Round",
+        "description": "Available year round as a staple beer."
+      },
+      "style": {
+        "id": 1,
+        "categoryId": 1,
+        "category": {
+          "id": 1,
+          "name": "British Origin Ales",
+          "createDate": "2012-03-21 20:06:45"
         },
-        {
-            "id": "Ic6Tku",
-            "name": "Boddingtons Pub Ale",
-            "nameDisplay": "Boddingtons Pub Ale",
-            "description": "A higher ABV version of Boddingtons Draught Bitter, brewed since 1993 for export markets. It was available in the United Kingdom from 1995–6 as Boddingtons Export.",
-            "abv": "4.6",
-            "glasswareId": 5,
-            "availableId": 1,
-            "styleId": 1,
-            "isOrganic": "N",
-            "labels": {
-                "icon": "https://s3.amazonaws.com/brewerydbapi/beer/Ic6Tku/upload_ZRNNFc-icon.png",
-                "medium": "https://s3.amazonaws.com/brewerydbapi/beer/Ic6Tku/upload_ZRNNFc-medium.png",
-                "large": "https://s3.amazonaws.com/brewerydbapi/beer/Ic6Tku/upload_ZRNNFc-large.png"
-            },
-            "status": "verified",
-            "statusDisplay": "Verified",
-            "createDate": "2012-01-03 02:44:01",
-            "updateDate": "2016-08-01 20:40:12",
-            "glass": {
-                "id": 5,
-                "name": "Pint",
-                "createDate": "2012-01-03 02:41:33"
-            },
-            "available": {
-                "id": 1,
-                "name": "Year Round",
-                "description": "Available year round as a staple beer."
-            },
-            "style": {
-                "id": 1,
-                "categoryId": 1,
-                "category": {
-                    "id": 1,
-                    "name": "British Origin Ales",
-                    "createDate": "2012-03-21 20:06:45"
-                },
-                "name": "Classic English-Style Pale Ale",
-                "shortName": "English Pale",
-                "description": "Classic English pale ales are golden to copper colored and display earthy, herbal English-variety hop character. Note that \"earthy, herbal English-variety hop character\" is the perceived end, but may be a result of the skillful use of hops of other national origins. Medium to high hop bitterness, flavor, and aroma should be evident. This medium-bodied pale ale has low to medium malt flavor and aroma. Low caramel character is allowable. Fruity-ester flavors and aromas are moderate to strong. Chill haze may be in evidence only at very cold temperatures. The absence of diacetyl is desirable, though, diacetyl (butterscotch character) is acceptable and characteristic when at very low levels.",
-                "ibuMin": "20",
-                "ibuMax": "40",
-                "abvMin": "4.5",
-                "abvMax": "5.5",
-                "srmMin": "5",
-                "srmMax": "5",
-                "ogMin": "1.04",
-                "fgMin": "1.008",
-                "fgMax": "1.016",
-                "createDate": "2012-03-21 20:06:45",
-                "updateDate": "2015-04-07 15:18:23"
-            }
+        "name": "Classic English-Style Pale Ale",
+        "shortName": "English Pale",
+        "description": "Classic English pale ales are golden to copper colored and display earthy, herbal English-variety hop character. Note that \"earthy, herbal English-variety hop character\" is the perceived end, but may be a result of the skillful use of hops of other national origins. Medium to high hop bitterness, flavor, and aroma should be evident. This medium-bodied pale ale has low to medium malt flavor and aroma. Low caramel character is allowable. Fruity-ester flavors and aromas are moderate to strong. Chill haze may be in evidence only at very cold temperatures. The absence of diacetyl is desirable, though, diacetyl (butterscotch character) is acceptable and characteristic when at very low levels.",
+        "ibuMin": "20",
+        "ibuMax": "40",
+        "abvMin": "4.5",
+        "abvMax": "5.5",
+        "srmMin": "5",
+        "srmMax": "5",
+        "ogMin": "1.04",
+        "fgMin": "1.008",
+        "fgMax": "1.016",
+        "createDate": "2012-03-21 20:06:45",
+        "updateDate": "2015-04-07 15:18:23"
+      }
+    },
+    {
+      "id": "E39zbg",
+      "name": "Inferno Golden Ale",
+      "nameDisplay": "Inferno Golden Ale",
+      "description": "This light, igniting ale flickers complex fruits across your tongue, leaving a dry, fruity, bitter finish, smothering your thirst.",
+      "abv": "4",
+      "availableId": 1,
+      "styleId": 6,
+      "isOrganic": "N",
+      "labels": {
+        "icon": "https://s3.amazonaws.com/brewerydbapi/beer/E39zbg/upload_3VcZmm-icon.png",
+        "medium": "https://s3.amazonaws.com/brewerydbapi/beer/E39zbg/upload_3VcZmm-medium.png",
+        "large": "https://s3.amazonaws.com/brewerydbapi/beer/E39zbg/upload_3VcZmm-large.png"
+      },
+      "status": "verified",
+      "statusDisplay": "Verified",
+      "createDate": "2012-10-22 11:32:30",
+      "updateDate": "2015-12-16 18:43:36",
+      "available": {
+        "id": 1,
+        "name": "Year Round",
+        "description": "Available year round as a staple beer."
+      },
+      "style": {
+        "id": 6,
+        "categoryId": 1,
+        "category": {
+          "id": 1,
+          "name": "British Origin Ales",
+          "createDate": "2012-03-21 20:06:45"
         },
-        {
-            "id": "E39zbg",
-            "name": "Inferno Golden Ale",
-            "nameDisplay": "Inferno Golden Ale",
-            "description": "This light, igniting ale flickers complex fruits across your tongue, leaving a dry, fruity, bitter finish, smothering your thirst.",
-            "abv": "4",
-            "availableId": 1,
-            "styleId": 6,
-            "isOrganic": "N",
-            "labels": {
-                "icon": "https://s3.amazonaws.com/brewerydbapi/beer/E39zbg/upload_3VcZmm-icon.png",
-                "medium": "https://s3.amazonaws.com/brewerydbapi/beer/E39zbg/upload_3VcZmm-medium.png",
-                "large": "https://s3.amazonaws.com/brewerydbapi/beer/E39zbg/upload_3VcZmm-large.png"
-            },
-            "status": "verified",
-            "statusDisplay": "Verified",
-            "createDate": "2012-10-22 11:32:30",
-            "updateDate": "2015-12-16 18:43:36",
-            "available": {
-                "id": 1,
-                "name": "Year Round",
-                "description": "Available year round as a staple beer."
-            },
-            "style": {
-                "id": 6,
-                "categoryId": 1,
-                "category": {
-                    "id": 1,
-                    "name": "British Origin Ales",
-                    "createDate": "2012-03-21 20:06:45"
-                },
-                "name": "English-Style Summer Ale",
-                "shortName": "English Summer Ale",
-                "description": "English Summer Ale is light straw to golden colored with medium-low to medium bitterness, light to medium-light body, and low to medium residual malt sweetness. Torrefied and/or malted wheat are often used in quantities of 25% or less. Malt flavor may be biscuit-like. English, American or Noble-type hop, character, flavor and aroma are evident and may or may not be assertive yet always well balanced with malt character. Mild carbonation traditionally characterizes draft-cask versions. In bottled versions, normal or lively carbon dioxide content is appropriate. The overall impression is refreshing and thirst quenching. Fruity-ester characters are acceptable at low to moderate levels. No butterscotch-like diacetyl or sweet corn-like dimethylsulfide (DMS) should be apparent in aroma or flavor. Chill haze is allowable at cold temperatures.",
-                "ibuMin": "20",
-                "ibuMax": "30",
-                "abvMin": "3.6",
-                "abvMax": "5",
-                "srmMin": "4",
-                "srmMax": "7",
-                "ogMin": "1.036",
-                "fgMin": "1.006",
-                "fgMax": "1.012",
-                "createDate": "2012-03-21 20:06:45",
-                "updateDate": "2015-04-07 15:19:26"
-            }
+        "name": "English-Style Summer Ale",
+        "shortName": "English Summer Ale",
+        "description": "English Summer Ale is light straw to golden colored with medium-low to medium bitterness, light to medium-light body, and low to medium residual malt sweetness. Torrefied and/or malted wheat are often used in quantities of 25% or less. Malt flavor may be biscuit-like. English, American or Noble-type hop, character, flavor and aroma are evident and may or may not be assertive yet always well balanced with malt character. Mild carbonation traditionally characterizes draft-cask versions. In bottled versions, normal or lively carbon dioxide content is appropriate. The overall impression is refreshing and thirst quenching. Fruity-ester characters are acceptable at low to moderate levels. No butterscotch-like diacetyl or sweet corn-like dimethylsulfide (DMS) should be apparent in aroma or flavor. Chill haze is allowable at cold temperatures.",
+        "ibuMin": "20",
+        "ibuMax": "30",
+        "abvMin": "3.6",
+        "abvMax": "5",
+        "srmMin": "4",
+        "srmMax": "7",
+        "ogMin": "1.036",
+        "fgMin": "1.006",
+        "fgMax": "1.012",
+        "createDate": "2012-03-21 20:06:45",
+        "updateDate": "2015-04-07 15:19:26"
+      }
+    },
+    {
+      "id": "JcltUD",
+      "name": "Aber Dabba Doo",
+      "nameDisplay": "Aber Dabba Doo",
+      "description": "A nice session beer that you could contently drink all evening.\r\nMade with British hops, Challenger and Progress.\r\nThere are soft hoppy aromas to fill your nose and a caramel flavour carrying an edge of gentle spice to tickle your tongue.",
+      "abv": "4.2",
+      "glasswareId": 5,
+      "availableId": 1,
+      "styleId": 2,
+      "isOrganic": "N",
+      "labels": {
+        "icon": "https://s3.amazonaws.com/brewerydbapi/beer/JcltUD/upload_xVXzsQ-icon.png",
+        "medium": "https://s3.amazonaws.com/brewerydbapi/beer/JcltUD/upload_xVXzsQ-medium.png",
+        "large": "https://s3.amazonaws.com/brewerydbapi/beer/JcltUD/upload_xVXzsQ-large.png"
+      },
+      "status": "verified",
+      "statusDisplay": "Verified",
+      "servingTemperature": "cellar",
+      "servingTemperatureDisplay": "Cellar - (12-14C/54-57F)",
+      "createDate": "2015-12-08 11:30:22",
+      "updateDate": "2015-12-18 04:39:11",
+      "glass": {
+        "id": 5,
+        "name": "Pint",
+        "createDate": "2012-01-03 02:41:33"
+      },
+      "available": {
+        "id": 1,
+        "name": "Year Round",
+        "description": "Available year round as a staple beer."
+      },
+      "style": {
+        "id": 2,
+        "categoryId": 1,
+        "category": {
+          "id": 1,
+          "name": "British Origin Ales",
+          "createDate": "2012-03-21 20:06:45"
         },
-        {
-            "id": "JcltUD",
-            "name": "Aber Dabba Doo",
-            "nameDisplay": "Aber Dabba Doo",
-            "description": "A nice session beer that you could contently drink all evening.\r\nMade with British hops, Challenger and Progress.\r\nThere are soft hoppy aromas to fill your nose and a caramel flavour carrying an edge of gentle spice to tickle your tongue.",
-            "abv": "4.2",
-            "glasswareId": 5,
-            "availableId": 1,
-            "styleId": 2,
-            "isOrganic": "N",
-            "labels": {
-                "icon": "https://s3.amazonaws.com/brewerydbapi/beer/JcltUD/upload_xVXzsQ-icon.png",
-                "medium": "https://s3.amazonaws.com/brewerydbapi/beer/JcltUD/upload_xVXzsQ-medium.png",
-                "large": "https://s3.amazonaws.com/brewerydbapi/beer/JcltUD/upload_xVXzsQ-large.png"
-            },
-            "status": "verified",
-            "statusDisplay": "Verified",
-            "servingTemperature": "cellar",
-            "servingTemperatureDisplay": "Cellar - (12-14C/54-57F)",
-            "createDate": "2015-12-08 11:30:22",
-            "updateDate": "2015-12-18 04:39:11",
-            "glass": {
-                "id": 5,
-                "name": "Pint",
-                "createDate": "2012-01-03 02:41:33"
-            },
-            "available": {
-                "id": 1,
-                "name": "Year Round",
-                "description": "Available year round as a staple beer."
-            },
-            "style": {
-                "id": 2,
-                "categoryId": 1,
-                "category": {
-                    "id": 1,
-                    "name": "British Origin Ales",
-                    "createDate": "2012-03-21 20:06:45"
-                },
-                "name": "English-Style India Pale Ale",
-                "shortName": "English IPA",
-                "description": "Most traditional interpretations of English-style India pale ales are characterized by medium-high hop bitterness with a medium to medium-high alcohol content. Hops from a variety of origins may be used to contribute to a high hopping rate. Earthy and herbal English-variety hop character is the perceived end, but may be a result of the skillful use of hops of other national origins. The use of water with high mineral content results in a crisp, dry beer, sometimes with subtle and balanced character of sulfur compounds. This pale gold to deep copper-colored ale has a medium to high, flowery hop aroma and may have a medium to strong hop flavor (in addition to the hop bitterness). English-style India pale ales possess medium maltiness and body. Fruity-ester flavors and aromas are moderate to very strong. Diacetyl can be absent or may be perceived at very low levels. Chill haze is allowable at cold temperatures. Hops of other origins may be used for bitterness or approximating traditional English character.",
-                "ibuMin": "35",
-                "ibuMax": "63",
-                "abvMin": "5",
-                "abvMax": "7",
-                "srmMin": "6",
-                "srmMax": "14",
-                "ogMin": "1.05",
-                "fgMin": "1.012",
-                "fgMax": "1.018",
-                "createDate": "2012-03-21 20:06:45",
-                "updateDate": "2015-04-07 15:18:33"
-            }
-        }
-    ],
-    "notes": [
-    ]
+        "name": "English-Style India Pale Ale",
+        "shortName": "English IPA",
+        "description": "Most traditional interpretations of English-style India pale ales are characterized by medium-high hop bitterness with a medium to medium-high alcohol content. Hops from a variety of origins may be used to contribute to a high hopping rate. Earthy and herbal English-variety hop character is the perceived end, but may be a result of the skillful use of hops of other national origins. The use of water with high mineral content results in a crisp, dry beer, sometimes with subtle and balanced character of sulfur compounds. This pale gold to deep copper-colored ale has a medium to high, flowery hop aroma and may have a medium to strong hop flavor (in addition to the hop bitterness). English-style India pale ales possess medium maltiness and body. Fruity-ester flavors and aromas are moderate to very strong. Diacetyl can be absent or may be perceived at very low levels. Chill haze is allowable at cold temperatures. Hops of other origins may be used for bitterness or approximating traditional English character.",
+        "ibuMin": "35",
+        "ibuMax": "63",
+        "abvMin": "5",
+        "abvMax": "7",
+        "srmMin": "6",
+        "srmMax": "14",
+        "ogMin": "1.05",
+        "fgMin": "1.012",
+        "fgMax": "1.018",
+        "createDate": "2012-03-21 20:06:45",
+        "updateDate": "2015-04-07 15:18:33"
+      }
+    }
+  ],
+  "notes": []
 }
